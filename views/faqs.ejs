@@ -1,0 +1,47 @@
+<%- include("partials/header.ejs")%>
+<section class="py-5 min-vh-100 d-flex align-items-center" style="background-color: #111827; color: white;">
+  <div class="container text-center">
+      <h2 class="display-5 fw-bold mb-4">Frequently Asked Questions</h2>
+      <div class="accordion accordion-flush" id="cryptoFaq">
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      How do I track cryptocurrency prices in real-time?
+                  </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#cryptoFaq">
+                  <div class="accordion-body">
+                      <p>CryptoPulse provides real-time updates on cryptocurrency prices by fetching data from leading blockchain APIs.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      What features does CryptoPulse offer?
+                  </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#cryptoFaq">
+                  <div class="accordion-body">
+                      <p>CryptoPulse offers live price tracking, market insights, historical data, and an intuitive user interface for easy navigation.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      How secure is CryptoPulse?
+                  </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#cryptoFaq">
+                  <div class="accordion-body">
+                      <p>CryptoPulse ensures the security of your data by using encrypted connections and retrieving information from trusted API sources.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+  <%- include("partials/footer.ejs")%>
